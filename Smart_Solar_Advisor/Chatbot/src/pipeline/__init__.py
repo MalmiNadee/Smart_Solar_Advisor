@@ -1,0 +1,1 @@
+"""Pipeline package for automated data collection and processing"""

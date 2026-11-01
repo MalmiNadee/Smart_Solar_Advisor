@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 40% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 13%;
+
+    --primary: 220 70% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 30% 93%;
+    --secondary-foreground: 220 40% 13%;
+
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 42 100% 50%;
+    --accent-foreground: 220 40% 13%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 220 70% 25%;
+
+    --radius: 0.75rem;
+
+    --solar-gold: 42 100% 50%;
+    --solar-gold-light: 42 100% 92%;
+    --solar-amber: 36 100% 55%;
+    --solar-navy: 220 70% 25%;
+    --solar-navy-light: 220 50% 40%;
+    --solar-sky: 200 80% 55%;
+    --solar-green: 155 70% 45%;
+    --solar-green-light: 155 70% 92%;
+
+    --sidebar-background: 220 70% 20%;
+    --sidebar-foreground: 220 20% 90%;
+    --sidebar-primary: 42 100% 50%;
+    --sidebar-primary-foreground: 220 40% 13%;
+    --sidebar-accent: 220 60% 30%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 60% 28%;
+    --sidebar-ring: 42 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .kpi-number {
+    @apply text-3xl font-extrabold tracking-tight;
+  }
+
+  .card-solar {
+    @apply bg-card rounded-xl shadow-sm border border-border p-6 transition-shadow duration-200 hover:shadow-md;
+  }
+
+  .gradient-solar {
+    background: linear-gradient(135deg, hsl(220 70% 25%), hsl(220 50% 40%));
+  }
+
+  .gradient-gold {
+    background: linear-gradient(135deg, hsl(42 100% 50%), hsl(36 100% 55%));
+  }
+}

@@ -1,0 +1,10 @@
+pandas
+numpy
+joblib
+firebase-admin
+python-dotenv
+xgboost
+flask
+shap
+prophet
+statsmodels

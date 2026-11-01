@@ -1,0 +1,54 @@
+# =========================
+# Python virtual environment
+# =========================
+venv/
+.env/
+
+# =========================
+# Python cache files
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# VS Code settings
+# =========================
+.vscode/
+
+# =========================
+# Firebase credentials
+# =========================
+#firebase_key.json
+#*.json
+
+# =========================
+# Machine Learning models
+# =========================
+#model/*.pkl
+#model/*.joblib
+
+# =========================
+# Logs & temp files
+# =========================
+*.log
+logs/
+
+# =========================
+# Jupyter notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Environment-specific files
+# =========================
+.env.local
+.env.production
+.env.development

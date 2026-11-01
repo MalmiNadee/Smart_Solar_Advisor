@@ -1,0 +1,35 @@
+# Core dependencies
+streamlit>=1.28.0
+sentence-transformers>=2.7.0
+chromadb>=0.4.15
+python-dotenv>=1.0.0
+
+# Translation
+deep-translator>=1.11.4
+langdetect>=1.0.9
+
+# Data processing
+PyPDF2>=3.0.1
+beautifulsoup4>=4.12.2
+pandas>=2.1.0
+openpyxl>=3.1.2
+
+# AI/ML - Updated versions for compatibility
+torch>=2.1.0,<2.5.0
+transformers>=4.36.0,<4.50.0
+numpy>=1.24.0,<2.0.0
+safetensors>=0.4.0
+
+# Utilities
+requests>=2.31.0
+tqdm>=4.66.0
+
+# Pipeline
+schedule>=1.2.0
+lxml>=4.9.3
+
+# Voice capabilities - NEW
+SpeechRecognition>=3.10.0
+gTTS>=2.5.0
+PyAudio>=0.2.14  # For microphone input
+pydub>=0.25.1  # For audio processing

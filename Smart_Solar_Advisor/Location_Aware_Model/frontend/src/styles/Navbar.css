@@ -1,0 +1,96 @@
+.app-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 32px;
+  background: rgb(172, 151, 190);
+  color: #312e81;
+
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.12);
+}
+
+/* Brand */
+.brand-link {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Actions */
+.app-navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Profile button */
+.profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 14px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 14px;
+
+  background: #ffffff;
+  color: #0f172a;
+  text-decoration: none;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+.profile-btn:hover {
+  background: #ffedd5;
+  transform: translateY(-1px);
+}
+
+/* Admin badge */
+.user-role-badge--admin {
+  background: linear-gradient(135deg, #fb923c, #facc15);
+  color: #7c2d12;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Logout */
+.btn-logout {
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+
+  border: 1.5px solid black;
+  background: rgb(192, 25, 25);
+  color: white;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-logout:hover {
+  background: #dba477;
+  color: #ffffff;
+}
+
+.navbar-logo {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+

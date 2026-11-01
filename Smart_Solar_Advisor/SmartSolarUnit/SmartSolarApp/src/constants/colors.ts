@@ -1,0 +1,15 @@
+export default {
+    primary: "#0F172A",
+    solarOrange: "#F97316",
+    white: "#FFFFFF",
+    background: "#F1F5F9",
+    card: "#FFFFFF",
+    text: "#0F172A",
+    textSecondary: "#64748B",
+    border: "#E2E8F0",
+    success: "#22C55E",
+    warning: "#EAB308",
+    danger: "#EF4444",
+    gray: "#94A3B8",
+    lightGray: "#F8FAFC",
+  };

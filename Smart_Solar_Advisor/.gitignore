@@ -1,0 +1,10 @@
+# Firebase credentials
+**/firebase_key.json
+**/serviceAccountKey.json
+
+# Environment variables
+**/.env
+
+# Python
+__pycache__/
+venv/

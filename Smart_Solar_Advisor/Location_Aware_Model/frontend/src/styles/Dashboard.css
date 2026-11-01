@@ -1,0 +1,253 @@
+/* =========================
+   DASHBOARD LAYOUT
+========================= */
+
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  color: #0f172a;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.dashboard-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 28px 60px;
+}
+
+/* =========================
+   WELCOME SECTION
+========================= */
+
+.welcome-section {
+  margin-bottom: 32px;
+}
+
+.welcome-section h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  letter-spacing: -0.4px;
+}
+
+.welcome-section p {
+  font-size: 15px;
+  color: #475569;
+}
+
+/* =========================
+   MAIN GRID
+========================= */
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 2.6fr 1.4fr;
+  gap: 28px;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* =========================
+   CARD BASE STYLE
+========================= */
+
+.card,
+.history-section,
+.info-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================
+   HISTORY SECTION
+========================= */
+
+.history-section {
+  margin-bottom: 24px;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.history-header h3 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.toggle-history-btn {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toggle-history-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.35);
+}
+
+/* =========================
+   HISTORY CONTENT
+========================= */
+
+.history-content {
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.loading-text,
+.no-history {
+  font-size: 14px;
+  color: #64748b;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.history-date-group {
+  margin-bottom: 14px;
+}
+
+.history-date {
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+  margin: 16px 0 8px;
+}
+
+/* =========================
+   HISTORY ITEM
+========================= */
+
+.history-item {
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+}
+
+.history-item:hover {
+  background: #ecfeff;
+  border-color: #67e8f9;
+}
+
+.history-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.history-location {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+}
+
+.history-item-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #475569;
+}
+
+.history-energy {
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.history-confidence {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* =========================
+   EXPORT BUTTON CONTAINER
+========================= */
+
+.export-buttons button {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   INFO / TIPS CARD
+========================= */
+
+.info-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.info-card ul {
+  padding-left: 18px;
+}
+
+.info-card li {
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* =========================
+   SCROLLBAR (SUBTLE)
+========================= */
+
+.history-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history-content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1100px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-container {
+    padding: 24px 18px 50px;
+  }
+
+  .welcome-section h1 {
+    font-size: 26px;
+  }
+}

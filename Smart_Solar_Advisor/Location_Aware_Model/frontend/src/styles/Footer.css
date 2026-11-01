@@ -1,0 +1,32 @@
+.app-footer {
+  margin-top: auto;
+  padding: 18px 32px;
+  background:  rgb(172, 151, 190);
+  color: black;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.footer-brand {
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links span {
+  cursor: pointer;
+}
+
+.footer-links span:hover {
+  color: #f59e0b;
+}
+
+.footer-meta {
+  opacity: 0.8;
+}
